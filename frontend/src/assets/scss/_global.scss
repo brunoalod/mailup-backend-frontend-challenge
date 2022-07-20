@@ -1,0 +1,63 @@
+body {
+    margin: 20px;
+}
+
+.container {
+    margin: 40px;
+    border: 1px solid $default-border-color;
+    border-radius: $default-radius;
+    padding: 20px;
+}
+
+.btn {
+    border-radius: $default-radius;
+    height: 35px;
+    border: 1px solid $default-border-color;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: buttonface;
+}
+
+input[type=text] {
+    border-radius: $default-radius;
+    border: 1px solid $default-border-color;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+div {
+    position: relative;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+@for $var from 0 to 100 {
+    .ml-#{$var} {
+        margin-left: #{$var}px;
+    }
+
+    .mr-#{$var} {
+        margin-right: #{$var}px;
+    }
+
+    .mt-#{$var} {
+        margin-top: #{$var}px;
+    }
+
+    .mb-#{$var} {
+        margin-bottom: #{$var}px;
+    }
+}
